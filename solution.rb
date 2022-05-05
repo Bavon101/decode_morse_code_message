@@ -16,8 +16,8 @@ puts decode_char('.-')
 def decode_word(word)
   letters = word.split
   decoded_word = ''
-  letters.each { |letter| decoded_word += decode_char(letter) }
-  decoded_word += ' '
+  letters.each { |letter| decoded_word << decode_char(letter) }
+  decoded_word << ' '
 end
 
 puts decode_word('-- -.--')
@@ -25,7 +25,7 @@ puts decode_word('-- -.--')
 def decode(morse_code)
   words = morse_code.split('  ')
   decoded_morse = ''
-  words.each { |word| decoded_morse += decode_word(word) }
+  words.each { |word| decoded_morse << decode_word(word) }
   decoded_morse
 end
 
