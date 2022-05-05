@@ -1,5 +1,7 @@
 # Decode_morse Code_message using Ruby
 
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 > A method to decode an entire word in Morse code, takes a string parameter, and return the string representation.
 
 ## Authors
